@@ -1,0 +1,31 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateModelBooksTable extends Migration
+{
+    /* @return void */
+
+    public function up()
+    {
+        Schema::create('book', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('id_users')->unsigned();
+            $table->foreign('id_users')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->string('title');
+            $table->integer('pages');
+            $table->double('price', 10, 2);
+            $table->integer('status');
+            $table->timestamps();
+        });
+    }
+
+         /* @return void */
+
+    public function down()
+    {
+        Schema::dropIfExists('book');
+    }
+}

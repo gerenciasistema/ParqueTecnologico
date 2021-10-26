@@ -1,0 +1,55 @@
+    /*BODY*/
+    section {
+      margin-top: 1000px;
+    }
+    .text{
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      font-family: 'Rajdhani', sans-serif;
+    }
+
+    /*FILTRO*/
+    ul {
+      list-style-type: none;
+    }
+    li {
+      float: left;
+    }
+    .filterDiv {
+      display: none;
+    }
+    .show {
+      display: block;
+    }
+
+    /*TABELA*/
+    html, body {
+      width: 100%;
+    }
+    table {
+      margin: 0 auto;
+    }  
+    #tabela {
+      width: 70%;
+    }
+    th {
+      height: 30px;
+    }
+    .status{
+      text-align: center;
+      width: 90px;
+    }
+    .escola{
+      width: 250px;
+    }
+    .municipio{
+      text-align: center;
+      width: 25px;
+    }
+
+    /*TABELA*/
+    .paginate{
+      margin: 0 0 0 420px;
+    }
+    
